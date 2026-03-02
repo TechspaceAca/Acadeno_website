@@ -51,7 +51,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 130px;
     /* Offset for even larger header */
 }
 
@@ -185,7 +185,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0.9rem 0;
+    padding: 0.5rem 0;
     /* Extra padding */
     transition: 0.3s ease;
     background: rgba(255, 255, 255, 0.85);
@@ -207,15 +207,12 @@ nav {
 }
 
 .logo-img {
-    height: 100px;
-    /* Max prominence */
+    height: 90px;
     width: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
-    /* Removes white background */
+    /* Removes white background if any */
     image-rendering: -webkit-optimize-contrast;
-    transform: scale(1.5);
-    transform-origin: left center;
 }
 
 .nav-links {
@@ -246,7 +243,7 @@ nav {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 130px;
     position: relative;
     overflow: hidden;
     /* Light overlay on background image */
