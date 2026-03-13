@@ -32,6 +32,7 @@
     <meta name="twitter:image" content="https://www.acadeno.in/assets/Thumbnail_logo.png">
 
     <link rel="icon" href="../logo_Title.png" type="image/png">
+    <link rel="stylesheet" href="../chatbot.css">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -991,6 +992,31 @@
         document.querySelectorAll('.form-group').forEach(el => observer.observe(el));
     </script>
 
+    <!-- Chatbot Widget -->
+    <div id="chatbot-launcher" class="chatbot-launcher" title="Chat with AI Assistant">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9a10,10,0,0,0,0-20Zm0,18H5.41l.29-.29a1,1,0,0,0,0-1.42,1,1,0,0,0-1.41,0L3.58,19A8,8,0,1,1,12,20Zm5-9a1,1,0,0,0-1-1H8a1,1,0,0,0,0,2h8A1,1,0,0,0,17,11Zm0,4a1,1,0,0,0-1-1H8a1,1,0,0,0,0,2h8A1,1,0,0,0,17,15Z"/>
+      </svg>
+    </div>
+
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+          <div class="chatbot-header-info">
+              <img src="../assets/logo_Title.png" alt="Bot">
+              <h4>Acadeno AI Assistant</h4>
+          </div>
+          <div class="chatbot-header-controls">
+              <button class="chatbot-control-btn" id="chatbot-maximize" title="Maximize">□</button>
+              <button class="chatbot-control-btn" id="chatbot-close" title="Close">✕</button>
+          </div>
+      </div>
+      <div class="chatbot-content">
+          <iframe src="https://rag-bot-nine.vercel.app/" title="Acadeno AI Chat"></iframe>
+      </div>
+      <div class="chatbot-resizer"></div>
+    </div>
+
+    <script src="../chatbot.js"></script>
 </body>
 
 </html>
