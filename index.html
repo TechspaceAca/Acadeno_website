@@ -8,19 +8,22 @@
   <meta name="description"
     content="Acadeno Technologies Pvt Ltd - Where AI Builds Your Career. Personalised tech training, internships in Python, AI, Robotics, and industry-ready skill development in Calicut.">
   <link rel="stylesheet" href="style.css">
-  <!-- Favicon placeholder -->
-  <link rel="icon" type="image/png" href="assets/logo_Title.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
   <link rel="stylesheet" href="chatbot.css">
 </head>
 
 <body>
 
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="container">
       <nav>
         <a href="#home" class="logo-link">
-          <img src="assets/logo.png" alt="Acadeno Technologies" class="logo-img">
+          <img src="assets/acadeno-logo-v2.png" alt="Acadeno Technologies" class="logo-img">
         </a>
         <div class="mobile-menu-btn">☰</div>
         <ul class="nav-links">
@@ -29,9 +32,17 @@
           <li><a href="#programs">Internships</a></li>
           <li><a href="#services">Courses</a></li>
           <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#contact" class="btn btn-primary"
-              style="padding: 0.5rem 1.5rem; font-size: 0.9rem; color: white !important;">My IT Hub
-              Login</a></li>
+          <li><a href="#resume-builder">Resume Builder</a></li>
+          <li><a href="#ai-interviewer">AI Interviewer</a></li>
+          <li><a href="#contact" class="btn btn-primary header-cta">
+              <svg class="login-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span class="btn-text-full">My IT Hub Login</span>
+              <span class="btn-text-mobile">Login</span>
+            </a></li>
         </ul>
       </nav>
     </div>
@@ -309,7 +320,7 @@
           <div class="why-item reveal fade-right reveal-delay-3">
             <span class="check-icon">✓</span>
             <h4>Career Support</h4>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Portfolio, Resume & Placement</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Portfolio, <a href="https://ai-resume-builder-mx9q.onrender.com/" target="_blank" style="color: var(--accent-glow); text-decoration: underline; font-weight: 600;">AI Resume Builder</a>, <a href="https://ai-interview-platform-five-tau.vercel.app/" target="_blank" style="color: var(--accent-glow); text-decoration: underline; font-weight: 600;">AI Interviewer</a> & Placement</p>
           </div>
         </div>
         <div class="why-image reveal fade-left">
@@ -414,6 +425,95 @@
     </div>
   </section>
 
+  <!-- AI Resume Builder Section -->
+  <section id="resume-builder" class="resume-builder" style="padding: var(--section-padding); background: var(--bg-section-alt);">
+    <div class="container" style="max-width: 1100px;">
+      <div class="about-container-flex">
+        <div class="reveal fade-right">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">AI-Powered <span class="text-gradient">Resume Builder</span></h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.8;">
+            Create a professional, ATS-friendly resume in minutes with our AI Resume Builder. 
+            Tailored for tech roles, it helps you highlight your skills and projects effectively to land your dream internship.
+          </p>
+          <div style="margin-top: 2.5rem;">
+            <a href="https://ai-resume-builder-mx9q.onrender.com/" target="_blank" class="btn btn-primary" style="padding: 1rem 2.5rem;">Launch Resume Builder</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; opacity: 0.8;">🔹 Free for all Acadeno students</p>
+          </div>
+        </div>
+        <div class="reveal fade-left" style="display: flex; justify-content: center;">
+           <div style="background: white; border-radius: 24px; padding: 2.5rem; box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; max-width: 450px;">
+                <div style="height: 320px; background: #f8fafc; border-radius: 16px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px dashed #cbd5e1;">
+                    <!-- Simple Resume Mockup -->
+                    <div style="width: 200px; height: 260px; background: white; box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1); border-radius: 6px; padding: 1.8rem; display: flex; flex-direction: column; gap: 0.7rem; transform: rotate(-2deg); transition: transform 0.3s ease;">
+                        <div style="width: 45%; height: 10px; background: var(--accent-glow); border-radius: 2px;"></div>
+                        <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 1px;"></div>
+                        <div style="width: 90%; height: 5px; background: #e2e8f0; border-radius: 1px;"></div>
+                        <div style="width: 100%; height: 5px; background: #e2e8f0; border-radius: 1px; margin-bottom: 1.2rem;"></div>
+                        
+                        <div style="width: 35%; height: 8px; background: #cbd5e1; border-radius: 2px;"></div>
+                        <div style="width: 100%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 100%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 95%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 100%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                    </div>
+                    <!-- Stats / Badge -->
+                    <div style="position: absolute; bottom: 30px; right: 30px; background: #10b981; color: white; padding: 0.6rem 1.25rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); display: flex; align-items: center; gap: 0.5rem; transform: rotate(5deg);">
+                        <span>★</span> ATS SCORE: 98%
+                    </div>
+                    <!-- Background Decor -->
+                    <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--primary-gradient); opacity: 0.05; border-radius: 50%;"></div>
+                </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Interviewer Section -->
+  <section id="ai-interviewer" class="ai-interviewer" style="padding: var(--section-padding); background: #ffffff;">
+    <div class="container" style="max-width: 1100px;">
+      <div class="about-container-flex" style="flex-direction: row-reverse;">
+        <div class="reveal fade-left">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">AI-Powered <span class="text-gradient">Interviewer</span></h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.8;">
+            Master your interview skills with our AI-driven practice platform. 
+            Get real-time feedback, industry-specific questions, and performance analytics to boost your confidence and land your dream job.
+          </p>
+          <div style="margin-top: 2.5rem;">
+            <a href="https://ai-interview-platform-five-tau.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 1rem 2.5rem;">Launch AI Interviewer</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; opacity: 0.8;">🔹 Elevate your practice with AI feedback</p>
+          </div>
+        </div>
+        <div class="reveal fade-right" style="display: flex; justify-content: center;">
+           <div style="background: white; border-radius: 24px; padding: 2.5rem; box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; max-width: 450px;">
+                <div style="height: 320px; background: #f8fafc; border-radius: 16px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px dashed #cbd5e1;">
+                    <!-- Simple Interview Mockup -->
+                    <div style="width: 200px; height: 260px; background: white; box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1); border-radius: 6px; padding: 1.8rem; display: flex; flex-direction: column; gap: 0.7rem; transform: rotate(2deg); transition: transform 0.3s ease;">
+                        <div style="width: 30%; height: 10px; background: #2563eb; border-radius: 2px;"></div>
+                        <div style="width: 100%; height: 5px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 90%; height: 50px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: #64748b; padding: 0.5rem; text-align: center;">"Tell me about yourself..."</div>
+                        
+                        <div style="width: 100%; display: flex; gap: 0.5rem;">
+                          <div style="width: 12px; height: 12px; background: #10b981; border-radius: 50%;"></div>
+                          <div style="width: 50%; height: 6px; background: #e2e8f0; border-radius: 3px; margin: auto 0;"></div>
+                        </div>
+                        <div style="width: 85%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 100%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                        <div style="width: 95%; height: 4px; background: #f1f5f9; border-radius: 1px;"></div>
+                    </div>
+                    <!-- Score Badge -->
+                    <div style="position: absolute; top: 30px; left: 30px; background: #7c3aed; color: white; padding: 0.6rem 1.25rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3); display: flex; align-items: center; gap: 0.5rem; transform: rotate(-5deg);">
+                        <span>✔</span> READINESS: 95%
+                    </div>
+                    <!-- Background Decor -->
+                    <div style="position: absolute; bottom: -20px; left: -20px; width: 100px; height: 100px; background: var(--primary-gradient); opacity: 0.05; border-radius: 50%;"></div>
+                </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact & Footer -->
   <section id="contact" class="contact">
     <div class="container">
@@ -512,10 +612,13 @@
   </footer>
 
   <!-- WhatsApp Widget -->
-  <a href="https://wa.me/919447933266?text=Hi%20Acadeno,%20I'm%20interested%20in..." class="whatsapp-float"
-    target="_blank" title="Chat with us on WhatsApp">
-    <img src="assets/whatsapp.svg" alt="WhatsApp">
-  </a>
+  <div class="whatsapp-wrapper">
+    <a href="https://wa.me/919447933266?text=Hi%20Acadeno,%20I'm%20interested%20in..." class="whatsapp-float" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="28px" height="28px" style="display:block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));">
+        <path fill="#ffffff" d="M 24 4 C 12.972066 4 4 12.972066 4 24 C 4 27.827814 5.0593852 31.417563 6.9023438 34.472656 L 4.0449219 43.818359 L 13.628906 41.011719 C 16.58958 42.72466 20.076804 43.710937 23.792969 43.710937 C 34.82093 43.710938 44 34.737841 44 23.710938 C 44 12.683911 34.82093 4 23.792969 4 z M 24 7 C 33.374 7 41 14.626 41 24 C 41 33.374 33.374 41 24 41 C 20.638 41 17.516 40.013 14.898 38.322 L 13.484 37.447 L 8.6777344 38.875 L 10.148438 34.189453 L 9.203125 32.728516 C 7.3550474 30.01044 6.2929688 26.630822 6.2929688 23 C 6.2929688 13.626 13.626 7 24 7 z M 16.642578 13 C 16.001578 13 14.99707 13.252 14.24707 14.002 C 13.49707 14.752 11.988281 16.250777 11.988281 19.375 C 11.988281 22.499 14.296875 25.515 14.671875 26.015 C 15.046875 26.515 19.019141 32.009766 24.369141 34.634766 C 26.534141 35.634766 28.222 36.258 29.535 36.633 C 31.710938 37.258 33.695313 37.132813 35.195313 36.882813 C 36.820313 36.507813 39.195313 35.132813 39.820313 33.507813 C 40.320313 32.132813 40.570313 30.882813 40.195313 30.507813 C 39.945313 30.257813 39.570313 30.132813 38.945313 29.882813 L 35.195313 28.132813 C 34.570313 27.882813 34.070313 27.632813 33.695313 28.132813 C 33.195313 28.632813 32.443359 29.5625 31.818359 30.1875 C 31.443359 30.5625 30.942578 30.75 30.317578 30.5 C 29.567578 30.125 27.367188 29.374 24.742188 27.124 C 22.742188 25.374 21.364844 23.124 20.964844 22.374 C 20.589844 21.749 20.839844 21.374 21.214844 20.999 C 21.714844 20.499 22.566406 19.501953 22.941406 18.876953 C 23.191406 18.501953 23.066406 18.001 22.941406 17.626 L 21.191406 13.876 C 20.941406 13.126 20.441406 13 19.941406 13 C 19.691406 13 16.642578 13 16.642578 13 z" />
+      </svg>
+    </a>
+  </div>
 
   <!-- Chatbot Widget -->
   <div id="chatbot-launcher" class="chatbot-launcher" title="Chat with AI Assistant">

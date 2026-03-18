@@ -10,9 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close menu when clicking a link
+    // Header Scroll Effect
+    const header = document.querySelector('.header');
+    const handleScroll = () => {
+        if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    // Close menu and highlight active when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
+            navLinks.querySelectorAll('a').forEach(item => item.classList.remove('active'));
+            link.classList.add('active');
             navLinks.classList.remove('active');
             if (mobileBtn) mobileBtn.textContent = '☰';
         });
