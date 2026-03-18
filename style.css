@@ -1422,11 +1422,11 @@ footer {
 /* Mobile Header Adjustments */
 @media (max-width: 768px) {
     .header {
-        height: 100px !important;
+        height: 130px !important;
         padding: 0 20px !important;
     }
     .logo-img {
-        height: 90px !important;
+        height: 120px !important;
         width: auto !important;
     }
     .header-cta {
@@ -1440,10 +1440,10 @@ footer {
 
 @media (max-width: 480px) {
     .header {
-        height: 80px !important;
+        height: 130px !important;
     }
     .logo-img {
-        height: 72px !important;
+        height: 120px !important;
         width: auto !important;
     }
 }
