@@ -1422,11 +1422,12 @@ footer {
 /* Mobile Header Adjustments */
 @media (max-width: 768px) {
     .header {
-        height: 68px;
-        padding: 0 20px;
+        height: 100px !important;
+        padding: 0 20px !important;
     }
     .logo-img {
-        height: 56px;
+        height: 90px !important;
+        width: auto !important;
     }
     .header-cta {
         padding: 9px 18px !important;
@@ -1434,6 +1435,16 @@ footer {
     }
     .header-cta .login-icon {
         display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 80px !important;
+    }
+    .logo-img {
+        height: 72px !important;
+        width: auto !important;
     }
 }
 
