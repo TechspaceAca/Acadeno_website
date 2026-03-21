@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/placement-readiness",
+      "destination": "/placement-readiness.html"
+    }
+  ]
+}
